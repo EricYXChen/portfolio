@@ -40,7 +40,7 @@ const skillItem = [
     {
       imgSrc: '/images/python.svg',
       label: 'Python',
-      desc: 'General Development'
+      desc: 'Scripting / AI'
     },
   ];
 
