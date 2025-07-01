@@ -54,7 +54,7 @@ const Skill = () => {
                 </h2>
 
                 <p className = "text-zinc-400 mt-3 mb-3 max-w-[50ch]">
-                    Discover the powerful tools and technologies I use to create exceptional, high-performing websites and applications
+                    Discover the powerful tools and technologies I use to create scalable backend applications and design websites.
                 </p>
 
                 <div className = "grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
