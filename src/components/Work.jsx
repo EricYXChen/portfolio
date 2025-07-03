@@ -11,7 +11,7 @@ const workItem = [
         company: 'KELK',
         title: 'Software Developer Intern',
         imgSrc: '/images/KELK.png',
-        description: "Developed RESTful endpoints coupled with a UDP Broadcaster to initiate wireless tests and validation, enabling real-time testing for up to 10 concurrent devices. \nDesigned an internal dashboard for testing a new hardware line, utilizing JavaScript and Bootstrap to provide real-time validation of hardware configurations and test results.\nAdded multi-threading capability to existing unit test harness, reducing end-to-end latency by 75%."
+        description: "Led the development of an internal tool for testing hardware using JavaScript, Bootstrap and Python Flask.\nDeveloped a UDP broadcaster and receiver to send REST requests over a local network, allowing for wireless testing and validation of hardware.\nDesigned a state machine using Python to track the progress of each test along with a multi-threaded component to test devices in parallel, reducing total runtime by over 50%."
 
     },
 
@@ -20,28 +20,28 @@ const workItem = [
         company: 'JANA Solutions',
         title: 'Junior Software Developer Intern',
         imgSrc: '/images/JANA.png',
-        description: "Implemented reusable C# generic repository classes to streamline data access across multiple risk calculation entities, improving maintainability and re-usability of code.\nCollaborated with front-end engineers to create endpoints that enabled pagination, uplifting website performance.\nAuthored documentation for 20+ APIs, detailing summaries, parameters and return codes to improve readability."
+        description: "Implemented C# generic repository classes to streamline data access across multiple risk calculation services, improving maintainability and code re-usability.\nResolved page overflow and loading errors by implementing backend pagination endpoints, reducing the response times of search results and page loads by 40%.\nAuthored documentation for 20+ APIs, detailing summaries, parameters and return codes to improve readability."
     },
     {
         duration: 'May. 2022 - Aug. 2022',
         company: 'TD Bank',
         title: 'Software Engineering Intern',
         imgSrc: '/images/TD.png',
-        description: "Designed and implemented back-end features for a debit card printing app deployed in 1,000+ branches across the U.S., enabling seamless processing of print requests and customer data with Java and Oracle SQL.\nBuilt efficient endpoints using Spring and GraphQL to support various debit card types, streamlining printing workflows and improving operational efficiency.\nRemoved 2+ hours a week used for deployments with a Python script to automate the triaging of server errors."
+        description: "Designed and implemented back-end features for a new debit card printing app deployed in 200+ branches across the U.S., enabling seamless processing of print requests and customer data with Java and Oracle SQL.\nDeveloped Spring-based GraphQL endpoints to support multiple debit card types, and integrated them into a React frontend using Axios and TypeScript objects.\nCreated a database schema for storing detailed print requests in a SQL database, ensuring reliable data entry for all supported card types."
     },
     {
         duration: 'Sept. 2021 - Dec. 2021',
         company: 'TD Securities',
         title: 'Software Developer Intern',
         imgSrc: '/images/TD.png',
-        description: "Reduced 10+ hours weekly on data entry by creating daily webjobs with Java and Azure to compile numbers from a SQL database into spreadsheets tailored for different business applications.\nMigrated a legacy internal dashboard for viewing trading data to a React and .NET tech stack to create a modernized and maintainable webpage.\nUsed Java to create an internal tool to move daily log files between network drives, saving 15+ minutes daily."
+        description: "Automated the retrieval and analysis of high-frequency securities data with SQL stored procedures and Java post-processing to reduce query time by 30%.\nImplemented an automated outlier detection system for spreadsheets utilizing the Java Workbook object to highlight anomalies such as missing dates or stock prices.\nMigrated a webpage for viewing trading data to a React front-end utilizing React hooks to create dynamic tables."
     },
     {
         duration: 'Jan. 2021 - Apr. 2021',
         company: 'TD Bank',
         title: 'Software Developer Intern',
         imgSrc: '/images/TD.png',
-        description: "Optimized user experiences on TD’s EasyWeb online banking platform by developing 15+ web modules such as modals, dropdowns, and tables.\nLead the refactoring of a Jakarta Server Page in a Spring MVC project by implementing aria roles to improve the accessibility needs of job access with speech (JAWS) users.\nWorked closely with development team to debug production deployment issues using PuTTY to view error logs."
+        description: "Improved user experiences on TD’s EasyWeb online banking platform by developing 15+ web modules such as modals, dropdowns, and tables.\nLed the refactoring of a JSP in Spring Boot to meet accessibility standards for JAWS users, improving UI usability across assistive technologies.\nUtilized PuTTY to SSH into production servers and troubleshoot issues, minimizing system downtime."
     }
 ]
 
