@@ -3,10 +3,10 @@ import ProjectCard from './ProjectCard';
 
 const works = [
   {
-    imgSrc: '/images/project-1.jpg',
-    title: 'Card playing App',
+    imgSrc: '',
+    title: 'Chatroom App',
     tags: ['Websockets', 'Web App', 'Spring Boot'],
-    projectLink: 'https://musify-5al0.onrender.com/'
+    projectLink: ''
   },
   {
     imgSrc: '/images/musclememo.png',
@@ -15,10 +15,10 @@ const works = [
     projectLink: 'https://github.com/RohitKrishnaGit/Muscle-Memo'
   },
   {
-    imgSrc: '/images/project-3.jpg',
+    imgSrc: '/images/recommender.png',
     title: 'Anime recommender',
-    tags: ['Data Science', 'AI'],
-    projectLink: ''
+    tags: ['Data Science', 'Clustering', 'Python'],
+    projectLink: 'https://colab.research.google.com/drive/1L6EcwY8mUQJKfLN7f9viTctcF5egkh13?usp=sharing'
   },
 ];
 
