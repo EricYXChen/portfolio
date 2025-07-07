@@ -3,14 +3,14 @@
 import Portfolio from "./portfolio";
 
 import ResumeViewer from "./components/ResumeViewer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return(
-    <Router basename="/portfolio">
+    <Router>
       <Routes>
         <Route path ="/" element = {<Portfolio />} />
-        <Route path ="/resume" element ={<ResumeViewer/>} />
+        {/* <Route path ="/resume" element ={<ResumeViewer/>} /> */}
       </Routes>
 
     </Router>

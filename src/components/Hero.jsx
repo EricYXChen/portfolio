@@ -24,7 +24,7 @@ const Hero = () => {
 
                     <div className = "flex items-center gap-3">
                         <ButtonPrimary
-                        href = "/resume" 
+                        href = "https://scarlet-perle-83.tiiny.site" 
                         label = "Download CV"
                         icon = "download"/> 
 
