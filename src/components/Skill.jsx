@@ -1,44 +1,53 @@
+import javalogo from '../../images/java.svg'
+import csharplogo from '../../images/csharp.svg'
+import jslogo from '../../images/javascript.svg'
+import nodelogo from '../../images/nodejs.svg'
+import springlogo from '../../images/spring.svg'
+import sqllogo from '../../images/sql.svg'
+import reactlogo from '../../images/react.svg'
+import pythonlogo from '../../images/python.svg'
+
 
 import SkillCard from "./SkillCard";
 
 const skillItem = [
     {
-      imgSrc: '/images/java.svg',
+      imgSrc: javalogo,
       label: 'Java',
       desc: 'Backend Development'
     },
     {
-      imgSrc: '/images/csharp.svg',
+      imgSrc: csharplogo,
       label: 'C#',
       desc: 'Backend Development'
     },
     {
-      imgSrc: '/images/javascript.svg',
+      imgSrc: jslogo,
       label: 'JavaScript',
       desc: 'Interaction'
     },
     {
-      imgSrc: '/images/nodejs.svg',
+      imgSrc: nodelogo,
       label: 'NodeJS',
       desc: 'Web Server'
     },
     {
-      imgSrc: '/images/spring.svg',
+      imgSrc: springlogo,
       label: 'Spring Boot',
       desc: 'Java Framework'
     },
     {
-      imgSrc: '/images/sql.svg',
+      imgSrc: sqllogo,
       label: 'SQL',
       desc: 'Database Management'
     },
     {
-      imgSrc: '/images/react.svg',
+      imgSrc: reactlogo,
       label: 'React',
       desc: 'Framework'
     },
     {
-      imgSrc: '/images/python.svg',
+      imgSrc: pythonlogo,
       label: 'Python',
       desc: 'Scripting / AI'
     },

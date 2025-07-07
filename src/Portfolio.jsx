@@ -9,7 +9,6 @@ import Project from "./components/Project"
 import Contact from "./components/Contact";
 
 
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 const Portfolio = () => {
   return(
     <>

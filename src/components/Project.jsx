@@ -1,21 +1,25 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'; 
 
+import workoutLogo from "../../images/musclememo.png"
+import animeLogo from "../../images/recommender.png"
+import chatLogo from "../../images/chat.png"
+
 const works = [
   {
-    imgSrc: '',
+    imgSrc: chatLogo,
     title: 'Chatroom App',
     tags: ['Websockets', 'Web App', 'Spring Boot'],
-    projectLink: ''
+    projectLink: 'https://github.com/EricYXChen/chatroom'
   },
   {
-    imgSrc: '/images/musclememo.png',
+    imgSrc: workoutLogo,
     title: 'Workout App',
     tags: ['Mobile', 'API'],
     projectLink: 'https://github.com/RohitKrishnaGit/Muscle-Memo'
   },
   {
-    imgSrc: '/images/recommender.png',
+    imgSrc: animeLogo,
     title: 'Anime recommender',
     tags: ['Data Science', 'Clustering', 'Python'],
     projectLink: 'https://colab.research.google.com/drive/1L6EcwY8mUQJKfLN7f9viTctcF5egkh13?usp=sharing'

@@ -1,6 +1,7 @@
 
 
 import {ButtonPrimary, ButtonOutline} from './Button'
+import hero from "../../images/my_photo.jpg"
 
 const Hero = () => {
     return (
@@ -36,7 +37,7 @@ const Hero = () => {
 
                 <div className = "hidden lg:block">
                     <figure className = "w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-4040 to-65% rounded-[60px] overflow-hidden">
-                        <img src ="/images/my_photo.jpg" width = {656} height = {800} alt = "Eric Chen" className = "w-full"></img>
+                        <img src ={hero} width = {656} height = {800} alt = "Eric Chen" className = "w-full"></img>
                     </figure>
                 </div>
             </div>
