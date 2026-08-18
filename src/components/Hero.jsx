@@ -4,6 +4,11 @@ import {ButtonPrimary, ButtonOutline} from './Button'
 import hero from "../../images/my_photo.jpg"
 
 const Hero = () => {
+    const scrollToAbout = (event) => {
+        event.preventDefault();
+        document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <section id = "home" className = "pt-28 lg:pt-36">
             <div className = "container lg:grid lg:grid-cols-2 items-center lg:gap-10">
@@ -24,14 +29,15 @@ const Hero = () => {
 
                     <div className = "flex items-center gap-3">
                         <ButtonPrimary
-                        href = "https://scarlet-perle-83.tiiny.site" 
+                        href = "https://teal-codi-42.tiiny.site/" 
                         label = "Download CV"
                         icon = "download"/> 
 
                         <ButtonOutline
                         href = "#about"
                         label = "Scroll Down"
-                        icon = " arrow_downward" />
+                        icon = " arrow_downward"
+                        onClick={scrollToAbout} />
                     </div>
                 </div>
 

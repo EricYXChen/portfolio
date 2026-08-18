@@ -8,12 +8,14 @@ const ButtonPrimary = ({
     target = '_self',
     label,
     icon,
-    classes
+    classes,
+    onClick
 }) => {
     if (href) {
         return (
             <a href={href}
             target = {target}
+            onClick={onClick}
             className={"btn btn-primary " + classes}>
 
             {label}
@@ -24,7 +26,7 @@ const ButtonPrimary = ({
         )
     } else {
         return(
-            <button className = {"btn btn-primary " + classes}>
+            <button className = {"btn btn-primary " + classes} onClick={onClick}>
                 {label}
                 {icon ?
             <span className = "material-symbols-rounded" aria-hidden="true">{icon}</span> : undefined}
@@ -39,7 +41,8 @@ ButtonPrimary.propTypes = {
     href: PropTypes.string,
     target: PropTypes.string,
     icon: PropTypes.string,
-    classes: PropTypes.string
+    classes: PropTypes.string,
+    onClick: PropTypes.func
 }
 
 const ButtonOutline = ({
@@ -47,12 +50,14 @@ const ButtonOutline = ({
     target = '_self',
     label,
     icon,
-    classes
+    classes,
+    onClick
 }) => {
     if (href) {
         return (
             <a href={href}
             target = {target}
+            onClick={onClick}
             className={"btn btn-outline " + classes}>
 
             {label}
@@ -63,7 +68,7 @@ const ButtonOutline = ({
         )
     } else {
         return(
-            <button className = {"btn btn-outline " + classes}>
+            <button className = {"btn btn-outline " + classes} onClick={onClick}>
                 {label}
                 {icon ?
             <span className = "material-symbols-rounded" aria-hidden="true">{icon}</span> : undefined}
@@ -73,12 +78,13 @@ const ButtonOutline = ({
 
 }
 
-ButtonPrimary.ButtonOutline = {
+ButtonOutline.propTypes = {
     label: PropTypes.string.isRequired,
     href: PropTypes.string,
     target: PropTypes.string,
     icon: PropTypes.string,
-    classes: PropTypes.string
+    classes: PropTypes.string,
+    onClick: PropTypes.func
 }
 
 

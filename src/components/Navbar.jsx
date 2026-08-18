@@ -17,19 +17,28 @@ const Navbar = ({navOpen}) => {
     }
 
     const activeCurrentLink = (event) => {
+        event.preventDefault();
         lastActiveLink.current?.classList.remove('active');
-        event.target.classList.add('active');
-        lastActiveLink.current = event.target;
+        event.currentTarget.classList.add('active');
+        lastActiveLink.current = event.currentTarget;
         
-        activeBox.current.style.top = event.target.offsetTop + 'px';
-        activeBox.current.style.left = event.target.offsetLeft + 'px';
-        activeBox.current.style.width = event.target.offsetWidth + 'px';
-        activeBox.current.style.height = event.target.offsetHeight + 'px';
+        activeBox.current.style.top = event.currentTarget.offsetTop + 'px';
+        activeBox.current.style.left = event.currentTarget.offsetLeft + 'px';
+        activeBox.current.style.width = event.currentTarget.offsetWidth + 'px';
+        activeBox.current.style.height = event.currentTarget.offsetHeight + 'px';
+
+        document.getElementById(event.currentTarget.dataset.section)?.scrollIntoView({
+            behavior: 'smooth'
+        });
     }
 
 
-    useEffect(initActiveBox, []);
-    window.addEventListener('resize', initActiveBox);
+    useEffect(() => {
+        initActiveBox();
+        window.addEventListener('resize', initActiveBox);
+
+        return () => window.removeEventListener('resize', initActiveBox);
+    }, []);
     const navItems = [
         
         {
@@ -59,7 +68,7 @@ const Navbar = ({navOpen}) => {
         <nav className={'navbar ' + (navOpen ? 'active' : '')}>
             {
                 navItems.map(({label, link, className, ref}, key) =>(
-                    <a href ={link} className = {className} key = {key} ref = {ref} onClick ={activeCurrentLink}>
+                    <a href ={link} className = {className} key = {key} ref = {ref} data-section={link.slice(1)} onClick ={activeCurrentLink}>
                         {label}
                     </a>
                 ))

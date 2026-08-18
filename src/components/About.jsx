@@ -8,7 +8,7 @@ const aboutItems = [
     },
     {
       label: 'Years of experience',
-      number: 2
+      number: 3
     }
   ];
 
@@ -18,7 +18,7 @@ const About = () =>{
             <div className = "container">
                 <div className = "bg-zinc-800/50 p-7 rounded-2xl md:p-12">
                     <p className = "text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
-                    Welcome! I'm Eric a recent graduate from the University of Waterloo with a degree in Computer Engineering. As a part of my studies, I completed six internships across four  companies totaling two years of software development experience. I specialize in creating scalable backend platforms and bringing ideas to life on websites.
+                    Welcome! I'm Eric a recent graduate from the University of Waterloo with a degree in Computer Engineering. I'm currently working at Proofpoint as a backend software engineer working on an email security and threat detection platform. As a part of my studies, I completed six internships across four companies totaling three years of software development experience. I specialize in distributed backend architectures, scalable systems, and full-stack applications using Java, C#, Python, SQL, and JavaScript.
                     </p>
                 
 

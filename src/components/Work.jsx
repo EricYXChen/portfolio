@@ -2,8 +2,15 @@ import slLogo from '../../images/Sparklease.png'
 import kelkLogo from '../../images/KELK.png'
 import janaLogo from '../../images/JANA.png'
 import tdLogo from '../../images/TD.png'
+import proofpointLogo from '../../images/proofpoint.png'
 
 const workItem = [
+    {
+        company: 'Proofpoint Inc',
+        title: 'Software Engineer',
+        imgSrc: proofpointLogo,
+        description: "Designed and implemented features for an email security and threat detection platform, translating product requirements into technical designs and implementation plans while meeting customer compliance standards.\nEnhanced a Java message ingestion pipeline with language detection and Apache Lucene indexing, enabling efficient searching of 10,000+ daily messages by language.\nDeveloped background Java reporting jobs to aggregate and transform millions of MySQL records, using efficient data structures and batch processing to keep report generation performative at scale.\nStrengthened C# public API security by enforcing permission-based authorization checks, preventing users from bypassing access controls by modifying search parameters.\nCollaborated on an AI-assisted development pilot, defining model-selection guidelines and token-saving workflows that reduced development time for new features by 20%."
+    },
     {
         duration: 'Sept. 2024 - Dec. 2024',
         company: 'Sparklease Inc',
@@ -63,7 +70,7 @@ const Work = () => {
                     workItem.map(({duration, company, title, imgSrc, description}, key) => (
                         <li class="mb-10 ms-4">
                             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{duration}</time>
+                            {duration && <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{duration}</time>}
                             <div class = "company-headline flex items-center gap-2">
                                 <img class ="w-10 h-10" src={imgSrc}></img>
                                 <h3 class="headline-3 py-6">{company} - {title}</h3>
